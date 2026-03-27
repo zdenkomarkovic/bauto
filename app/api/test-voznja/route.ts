@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
           To: [{ Email: process.env.SITE_MAIL_RECEIVER }],
           ReplyTo: { Email: email, Name: `${ime} ${prezime}`.trim() },
           Subject: `Zakaži test vožnju – ${vozilo}`,
-          HTMLBody: `
+          HTMLPart: `
             <h2>Zahtev za test vožnju: ${vozilo}</h2>
             <table cellpadding="6" style="border-collapse:collapse;">
               <tr><td><strong>Ime:</strong></td><td>${ime}</td></tr>

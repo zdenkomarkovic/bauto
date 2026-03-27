@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
           To: [{ Email: process.env.SITE_MAIL_RECEIVER }],
           ReplyTo: { Email: email, Name: `${ime} ${prezime}`.trim() },
           Subject: `Zatraži ponudu – ${vozilo}`,
-          HTMLBody: `
+          HTMLPart: `
             <h2>Novi upit za vozilo: ${vozilo}</h2>
             <table cellpadding="6" style="border-collapse:collapse;">
               <tr><td><strong>Ime:</strong></td><td>${ime}</td></tr>
@@ -43,7 +43,9 @@ export async function POST(req: NextRequest) {
   });
 
   if (!res.ok) {
-    return NextResponse.json({ error: "Greška pri slanju." }, { status: 500 });
+    const body = await res.text();
+    console.error("Mailjet error:", res.status, body);
+    return NextResponse.json({ error: "Greška pri slanju.", detail: body }, { status: 500 });
   }
 
   return NextResponse.json({ ok: true });
