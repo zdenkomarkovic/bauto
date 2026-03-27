@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "WebFetch(domain:pscvukovic.rs)",
+      "Bash(ls E:/Sajtovi/bauto/.env*)",
+      "Bash(npx tsc:*)",
+      "Bash(curl:*)",
+      "Bash(node -e \"const v=require\\(''''fs''''\\).readFileSync\\(''''/dev/stdin'''',''''utf8''''\\); const versions=JSON.parse\\(v\\); console.log\\(versions.slice\\(-20\\).join\\(''''\\\\n''''\\)\\)\")",
+      "Bash(node -e \"const r=require\\(''./node_modules/react/package.json''\\); const s=require\\(''./node_modules/sanity/package.json''\\); console.log\\(''react:'', r.version, ''\\\\nsanity:'', s.version\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''', c => d+=c\\); process.stdin.on\\(''''end'''', \\(\\) => { const v=JSON.parse\\(d\\); console.log\\(v.slice\\(-10\\).join\\(''''\\\\n''''\\)\\); }\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/@sanity/ui/package.json''\\).version\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''', c => d+=c\\); process.stdin.on\\(''''end'''', \\(\\) => { const v=JSON.parse\\(d\\); console.log\\(v.slice\\(-5\\).join\\(''''\\\\n''''\\)\\); }\\)\")",
+      "Bash(sed 's/.*: //;s/[,\"\"\"\"]//g')",
+      "Bash(done)",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''',c=>d+=c\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const deps=JSON.parse\\(d\\); console.log\\(deps[''''@sanity/ui'''']\\); }\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''',c=>d+=c\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const deps=JSON.parse\\(d\\); console.log\\(JSON.stringify\\(deps,null,2\\)\\); }\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''',c=>d+=c\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const v=JSON.parse\\(d\\); console.log\\(v.slice\\(-5\\).join\\(''''\\\\n''''\\)\\); }\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''',c=>d+=c\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const deps=JSON.parse\\(d\\); console.log\\(''''@sanity/ui:'''', deps[''''@sanity/ui'''']\\); }\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/react-compiler-runtime/package.json''\\).version\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\); let d=''''''''; process.stdin.on\\(''''data'''',c=>d+=c\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const v=JSON.parse\\(d\\); console.log\\(v.slice\\(-10\\).join\\(''''\\\\n''''\\)\\); }\\)\")",
+      "Bash(node -e \"const React = require\\(''react''\\); console.log\\(''useEffectEvent:'', typeof React.useEffectEvent\\); console.log\\(''experimental_useEffectEvent:'', typeof React.experimental_useEffectEvent\\);\")",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/next/package.json''\\).version\\)\")",
+      "Bash(ls:*)",
+      "Bash(grep -r renault-white /e/Sajtovi/bauto --include=*.tsx --include=*.ts --include=*.jsx --include=*.js --include=*.json)",
+      "Bash(find /e/Sajtovi/bauto -name *.tsx -type f -exec grep -l \"Image\\\\|hero\\\\|Hero\" {})",
+      "Bash(2)",
+      "Bash(node:*)"
+    ]
+  }
+}
