@@ -13,27 +13,27 @@ export default function Footer() {
             {[
               {
                 naziv: "Prodaja novih vozila",
-                opis: "Bogat izbor novih Renault i Dacia modela sa mogućnošću test vožnje. Naši savetnici pomažu vam da pronađete pravo vozilo za vaše potrebe i budžet.",
+                opis: "Široka ponuda novih modela Renault i Dacia brendova uz mogućnost probne vožnje. Naš tim savetnika pomoći će vam da odaberete automobil koji odgovara vašim zahtevima i finansijskim mogućnostima.",
               },
               {
                 naziv: "Servis i rezervni delovi",
-                opis: "Redovno održavanje, tehnički pregledi i sve vrste popravki koje obavljaju ovlašćeni tehničari isključivo uz originalne rezervne delove.",
+                opis: "Obavljamo redovne servisne preglede, tehničke inspekcije i sve vrste popravki. Radove izvode sertifikovani mehaničari koji koriste isključivo originalne rezervne delove.",
               },
               {
                 naziv: "Električna vozila",
-                opis: "Upoznajte Renault E-Tech liniju — od čisto električnih do hibridnih modela. Savetujemo vas o opcijama punjenja i dostupnim podsticajima.",
+                opis: "Otkrijte Renault E-Tech asortiman – od potpuno električnih do hibridnih verzija. Pružamo stručne savete o opcijama punjenja i aktuelnim podsticajima za kupovinu.",
               },
               {
                 naziv: "Servis E-Tech pogona",
-                opis: "Naši specijalisti su obučeni za dijagnostiku i servis elektromotornih sistema, baterija i hibridnih pogonskih sklopova.",
+                opis: "Naši stručnjaci poseduju posebne sertifikate za dijagnostiku i servisiranje sistema elektromotora, baterijskih paketa i hibridnih transmisija.",
               },
               {
                 naziv: "Finansiranje",
-                opis: "Fleksibilni modeli finansiranja u saradnji sa bankarskim partnerima — pronađite mesečnu ratu koja vam odgovara i odmah preuzmite vozilo.",
+                opis: "Nudimo raznovrsne modele kreditiranja kroz saradnju sa finansijskim institucijama – izaberite ratu koja vam odgovara i preuzmite vozilo odmah.",
               },
               {
                 naziv: "Renault i Dacia pomoć na putu",
-                opis: "Putna pomoć dostupna 24/7. U slučaju kvara, Renault servisna mreža i Dacia servisna mreža reaguje brzo i stoji vam na raspolaganju gde god se nalazili.",
+                opis: "Putna asistencija dostupna non-stop, 24 sata dnevno. U slučaju zastoja, mreže Renault i Dacia servisa reaguju brzo i dolaze do vas bez obzira na lokaciju.",
               },
             ].map((usluga) => (
               <div key={usluga.naziv} className="border-l-2 border-yellow-400 pl-4">

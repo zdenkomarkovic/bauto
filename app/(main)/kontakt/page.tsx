@@ -123,7 +123,7 @@ export default function KontaktPage() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden h-full min-h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.0!2d19.848!3d43.851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDUxJzAzLjYiTiAxOcKwNTAnNTQuOCJF!5e0!3m2!1ssr!2srs!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.5947622776084!2d19.806215029681834!3d43.821332281996064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47582cf34351f0a7%3A0xdebef82b1bc515ff!2sDACIA%20-%20UZICE%20-%20B%20AUTO!5e1!3m2!1sen!2srs!4v1775118228865!5m2!1sen!2srs"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px" }}

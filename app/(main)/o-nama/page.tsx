@@ -29,13 +29,25 @@ export default function ONamaPage() {
               Vaš pouzdani partner za kupovinu i servis vozila
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              {KOMPANIJA.naziv} je firma specijalizovana za prodaju i servis motornih vozila,
-              smeštena u Užicu na adresi Zlatiborska 71. Sa godinama iskustva u auto industriji,
-              izgradili smo reputaciju pouzdanosti, kvaliteta i stručnosti.
+              B AUTO je kompanija sa tradicijom dugom 25 godina, izgrađena na poverenju, kvalitetu
+              i posvećenosti svakom klijentu. Kao ovlašćeni diler brendova Renault i Dacia, ponosno
+              predstavljamo spoj savremene automobilske tehnologije i vrhunske usluge.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Naš stručni tim pruža sveobuhvatnu podršku – od pronalaska idealnog vozila iz naše
-              bogate ponude, do profesionalnog servisa i održavanja vašeg automobila.
+              Tokom više od dve i po decenije poslovanja, izgradili smo reputaciju pouzdanog
+              partnera, kako za kupovinu novih i polovnih vozila, tako i za kompletno održavanje i
+              servisiranje. Naš tim čine iskusni i stručno obučeni profesionalci, koji svakom
+              klijentu pristupaju individualno, sa ciljem da pronađu najbolje rešenje za njegove
+              potrebe.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              U B AUTO verujemo da je kupovina automobila više od same transakcije – to je početak
+              dugoročnog odnosa. Zato kontinuirano unapređujemo našu ponudu i kvalitet usluge,
+              prateći najviše standarde brendova koje zastupamo.
+            </p>
+            <p className="text-gray-600 leading-relaxed font-medium">
+              Naša misija je jasna: da pružimo sigurnost, kvalitet i zadovoljstvo na svakom
+              kilometru.
             </p>
           </div>
 
