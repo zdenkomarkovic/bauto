@@ -55,7 +55,7 @@ const localBusinessJsonLd = {
     latitude: 43.8213,
     longitude: 19.8062,
   },
-  telephone: KONTAKT.prodaja.telefoni[0].replace(/\s/g, ""),
+  telephone: (KONTAKT.prodaja.telefoni[0] ?? "").replace(/\s/g, ""),
   email: KONTAKT.prodaja.email,
   openingHoursSpecification: [
     {

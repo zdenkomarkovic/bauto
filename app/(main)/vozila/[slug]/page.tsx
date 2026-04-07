@@ -41,7 +41,7 @@ function buildVoziloJsonLd(vozilo: NonNullable<Awaited<ReturnType<typeof getVozi
       seller: {
         "@type": "AutoDealer",
         name: KOMPANIJA.naziv,
-        telephone: KONTAKT.prodaja.telefoni[0].replace(/\s/g, ""),
+        telephone: (KONTAKT.prodaja.telefoni[0] ?? "").replace(/\s/g, ""),
         address: {
           "@type": "PostalAddress",
           streetAddress: KOMPANIJA.adresa,
