@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getVozilo, urlFor } from "@/lib/sanity";
 import { buildMetadata } from "@/lib/metadata";
+import { SITE_URL, KOMPANIJA, KONTAKT } from "@/lib/constants";
 import PonudaModal from "@/components/PonudaModal";
 import TestVoznjaModal from "@/components/TestVoznjaModal";
 
@@ -17,7 +18,39 @@ export async function generateMetadata({ params }: Props) {
   return buildMetadata({
     title: vozilo.naziv,
     description: vozilo.kratakOpis ?? `${vozilo.naziv} – na prodaju u B AUTO salonu Užice.`,
+    url: `${SITE_URL}/vozila/${slug}`,
   });
+}
+
+function buildVoziloJsonLd(vozilo: NonNullable<Awaited<ReturnType<typeof getVozilo>>>, slug: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: vozilo.naziv,
+    description: vozilo.kratakOpis ?? `${vozilo.naziv} – novo vozilo u ponudi B AUTO salona.`,
+    url: `${SITE_URL}/vozila/${slug}`,
+    brand: {
+      "@type": "Brand",
+      name: vozilo.marka === "renault" ? "Renault" : "Dacia",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      ...(vozilo.cena ? { price: vozilo.cena } : { price: "0" }),
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "AutoDealer",
+        name: KOMPANIJA.naziv,
+        telephone: KONTAKT.prodaja.telefoni[0].replace(/\s/g, ""),
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: KOMPANIJA.adresa,
+          addressLocality: "Užice",
+          addressCountry: "RS",
+        },
+      },
+    },
+  };
 }
 
 export default async function VoziloPage({ params }: Props) {
@@ -27,9 +60,15 @@ export default async function VoziloPage({ params }: Props) {
 
   const markaHref = `/${vozilo.marka}`;
   const markaLabel = vozilo.marka === "renault" ? "Renault" : "Dacia";
+  const jsonLd = buildVoziloJsonLd(vozilo, slug);
 
   return (
-    <div className="bg-gray-900 lg:bg-gray-50">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="bg-gray-900 lg:bg-gray-50">
       {/* Hero – desktop */}
       {vozilo.slika && (
         <div className="hidden lg:block relative w-full h-[calc(100vh-64px)]">
@@ -213,5 +252,6 @@ export default async function VoziloPage({ params }: Props) {
         </div>
       </div>
     </div>
+    </>
   );
 }
