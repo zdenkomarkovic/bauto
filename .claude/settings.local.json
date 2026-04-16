@@ -27,7 +27,13 @@
       "Bash(grep -r renault-white /e/Sajtovi/bauto --include=*.tsx --include=*.ts --include=*.jsx --include=*.js --include=*.json)",
       "Bash(find /e/Sajtovi/bauto -name *.tsx -type f -exec grep -l \"Image\\\\|hero\\\\|Hero\" {})",
       "Bash(2)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Read(//c/Users/DELL/AppData/Local/Temp/**)",
+      "Bash(mv \"1 \\(1\\).jpg\" \"hero1.jpg\")",
+      "Bash(mv \"41 \\(1\\).jpg\" \"hero2.jpg\")",
+      "Bash(mv \"6 \\(1\\).jpg\" \"hero3.jpg\")",
+      "Bash(mv \"7 \\(1\\).jpg\" \"hero4.jpg\")",
+      "Bash(mv \"viber_image_2025-10-26_19-54-46-503 \\(1\\).jpg\" \"hero5.jpg\")"
     ]
   }
 }

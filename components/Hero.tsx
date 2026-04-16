@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 const slides = [
-  { src: "/20230922_102418.jpg", alt: "B AUTO – vozila" },
-  { src: "/20260102_060908.jpg", alt: "B AUTO – salon" },
-  { src: "/20260122_164313.jpg", alt: "B AUTO – ponuda" },
+  { src: "/hero3.jpg", alt: "B AUTO – vozila" },
+  { src: "/hero1.jpg", alt: "B AUTO – salon" },
+  { src: "/hero2.jpg", alt: "B AUTO – ponuda" },
+  { src: "/hero4.jpg", alt: "B AUTO – ponuda" },
+  { src: "/hero5.jpg", alt: "B AUTO – ponuda" },
 ];
 
 export default function Hero() {
